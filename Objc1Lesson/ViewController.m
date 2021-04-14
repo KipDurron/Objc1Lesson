@@ -9,6 +9,8 @@
 #import "CheckChar.h"
 #import "EnumCalc.h"
 #import "Human.h"
+#import "Student.h"
+#import "СorresponStudent.h"
 
 
 @interface ViewController ()
@@ -40,6 +42,7 @@
     [self showHuman: human];
     Human human2 = {@"Sasha", 15, Female};
     [self showHuman: human2];
+    [self testStudent];
 }
 
 - (void) showHuman: (Human) human {
@@ -121,6 +124,21 @@
 
 - (NSInteger) divRemainder:(NSInteger) first: (NSInteger) second {
     return first % second;
+}
+-(void)testStudent{
+    Student* std = [[Student alloc] init];
+    CorresponStudent* corStd = [[CorresponStudent alloc] init];
+    [std changeAge];
+    std.name = @"Ivan";
+    std.surname = @"Ivanov";
+    corStd.name = @"Sergay";
+    corStd.surname = @"Sergeev";
+    NSMutableArray *arrayStudent = [NSMutableArray arrayWithObjects:std, corStd, nil];
+    for (Student* student in arrayStudent) {
+        NSLog(@"%@", [student description]);
+    }
+    
+    
 }
 
 @end
