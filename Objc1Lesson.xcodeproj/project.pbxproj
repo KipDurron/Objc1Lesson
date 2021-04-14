@@ -14,6 +14,7 @@
 		EC0B0F5426088705002D896C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0B0F5326088705002D896C /* Assets.xcassets */; };
 		EC0B0F5726088705002D896C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0B0F5526088705002D896C /* LaunchScreen.storyboard */; };
 		EC0B0F5A26088705002D896C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0B0F5926088705002D896C /* main.m */; };
+		ECB4E2F5260B8FAC00A10D3E /* CheckChar.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB4E2F4260B8FAC00A10D3E /* CheckChar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,10 @@
 		EC0B0F5626088705002D896C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC0B0F5826088705002D896C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC0B0F5926088705002D896C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC85A564261F75150076E517 /* EnumCalc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumCalc.h; sourceTree = "<group>"; };
+		EC85A568261F7BEB0076E517 /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		ECB4E2F2260B8EA400A10D3E /* CheckChar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckChar.h; sourceTree = "<group>"; };
+		ECB4E2F4260B8FAC00A10D3E /* CheckChar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckChar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,10 @@
 		EC0B0F46260886FD002D896C /* Objc1Lesson */ = {
 			isa = PBXGroup;
 			children = (
+				EC51AE002626D22600435B60 /* Student */,
+				EC85A567261F7BC00076E517 /* Human */,
+				ECB4E2ED260B8DC200A10D3E /* CheckChar */,
+				ECB4E2F7260B9AFF00A10D3E /* Calculate */,
 				EC0B0F47260886FD002D896C /* AppDelegate.h */,
 				EC0B0F48260886FD002D896C /* AppDelegate.m */,
 				EC0B0F4A260886FD002D896C /* SceneDelegate.h */,
@@ -74,6 +83,38 @@
 				EC0B0F5926088705002D896C /* main.m */,
 			);
 			path = Objc1Lesson;
+			sourceTree = "<group>";
+		};
+		EC51AE002626D22600435B60 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		EC85A567261F7BC00076E517 /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				EC85A568261F7BEB0076E517 /* Human.h */,
+			);
+			path = Human;
+			sourceTree = "<group>";
+		};
+		ECB4E2ED260B8DC200A10D3E /* CheckChar */ = {
+			isa = PBXGroup;
+			children = (
+				ECB4E2F2260B8EA400A10D3E /* CheckChar.h */,
+				ECB4E2F4260B8FAC00A10D3E /* CheckChar.m */,
+			);
+			path = CheckChar;
+			sourceTree = "<group>";
+		};
+		ECB4E2F7260B9AFF00A10D3E /* Calculate */ = {
+			isa = PBXGroup;
+			children = (
+				EC85A564261F75150076E517 /* EnumCalc.h */,
+			);
+			path = Calculate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB4E2F5260B8FAC00A10D3E /* CheckChar.m in Sources */,
 				EC0B0F4F260886FD002D896C /* ViewController.m in Sources */,
 				EC0B0F49260886FD002D896C /* AppDelegate.m in Sources */,
 				EC0B0F5A26088705002D896C /* main.m in Sources */,
